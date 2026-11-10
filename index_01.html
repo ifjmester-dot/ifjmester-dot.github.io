@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatlista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .urlap {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .urlap label {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            gap: 4px;
+        }
+
+        .urlap input {
+            padding: 8px;
+            font-size: 15px;
+        }
+
+        #hozzaad {
+            padding: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .tabla {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .sor {
+            display: table-row;
+        }
+
+        .cella {
+            display: table-cell;
+            border: 1px solid #999;
+            padding: 8px;
+        }
+
+        .fejlec .cella {
+            background: #ddd;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Névjegyzék</h1>
+
+    <div class="urlap">
+        <label>Név
+            <input type="text" id="nev">
+        </label>
+        <label>Cím
+            <input type="text" id="cim">
+        </label>
+        <label>Telefonszám
+            <input type="text" id="telefon">
+        </label>
+        <button id="hozzaad">Hozzáad</button>
+    </div>
+
+    <div class="tabla" id="tabla">
+        <div class="sor fejlec">
+            <div class="cella">Név</div>
+            <div class="cella">Cím</div>
+            <div class="cella">Telefonszám</div>
+        </div>
+    </div>
+
+    <script src="js_01.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számológép</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .szamologep {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        input, select, button {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #eredmeny {
+            min-width: 120px;
+            padding: 8px 12px;
+            border: 1px solid #999;
+            background: #f4f4f4;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Számológép</h1>
+
+    <div class="szamologep">
+        <input type="number" id="operandus1" placeholder="1. szám">
+
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <input type="number" id="operandus2" placeholder="2. szám">
+
+        <button id="egyenlo">=</button>
+
+        <span id="eredmeny"></span>
+    </div>
+
+    <script src="js_03.js"></script>
+</body>
+</html>

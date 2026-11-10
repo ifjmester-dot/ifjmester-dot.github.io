@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakktábla</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .beallitas {
+            margin-bottom: 20px;
+        }
+
+        .beallitas input {
+            width: 60px;
+            padding: 5px;
+        }
+
+        .tablak {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        /* --- sima sakktábla --- */
+        .sakktabla {
+            display: inline-block;
+            border: 2px solid #333;
+        }
+
+        .sakk-sor {
+            display: flex;
+        }
+
+        .mezo {
+            width: 40px;
+            height: 40px;
+        }
+
+        .vilagos {
+            background: #f0d9b5;
+        }
+
+        .sotet {
+            background: #b58863;
+        }
+
+        .cimkes-tabla {
+            display: inline-block;
+        }
+
+        .cimkes-sor {
+            display: flex;
+        }
+
+        .cimke {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .cimke.sorszam {
+            width: 25px;
+        }
+
+        .cimke.ures {
+            width: 25px;
+            height: 25px;
+        }
+
+        .cimke.betu {
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sakktábla generátor</h1>
+
+    <div class="beallitas">
+        <label>Tábla mérete (n × n):
+            <input type="number" id="meret" value="8" min="1" max="26">
+        </label>
+        <button id="general">Generál</button>
+    </div>
+
+    <div class="tablak">
+        <div>
+            <h3>Sima tábla</h3>
+            <div id="tabla1"></div>
+        </div>
+        <div>
+            <h3>Sorszámos</h3>
+            <div id="tabla2"></div>
+        </div>
+    </div>
+
+    <script src="js_02.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Véletlen színek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .doboz {
+            display: inline-block;
+            width: 120px;
+            height: 80px;
+            margin: 5px;
+            border: 1px solid #333;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        #fo-cim {
+            padding: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 5px 5px 15px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="fo-cim">Véletlen színek</h1>
+
+    <div>
+        <button id="gomb-cim">Cím kifestése (#fo-cim)</button>
+        <button id="gomb-dobozok">Dobozok kifestése (.doboz)</button>
+        <button id="gomb-torzs">Háttér kifestése (body)</button>
+    </div>
+
+    <div>
+        <div class="doboz">1</div>
+        <div class="doboz">2</div>
+        <div class="doboz">3</div>
+        <div class="doboz">4</div>
+    </div>
+
+    <script src="js_03.js"></script>
+</body>
+</html>
