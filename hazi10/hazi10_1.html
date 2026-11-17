@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Képdoboz Modul</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .image-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 280px;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .image-box figcaption {
+            color: #333;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="gallery"></div>
+
+    <script type="module">
+        import { createImageBox } from './hazi10_1.js';
+
+        const gallery = document.getElementById('gallery');
+
+        const box1 = createImageBox('https://picsum.photos/id/10/400/300', 'Erdei tájkép');
+        const box2 = createImageBox('https://picsum.photos/id/20/400/300', 'Munkaállomás');
+
+        gallery.appendChild(box1);
+        gallery.appendChild(box2);
+    </script>
+
+</body>
+</html>

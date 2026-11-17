@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Négyzet mozgatása billentyűzettel</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #f0f2f5;
+            font-family: sans-serif;
+        }
+
+        .info {
+            padding: 15px;
+            color: #555;
+            user-select: none;
+        }
+
+        #box {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            border-style: solid;
+            border-color: #555;
+            border-width: 3px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            
+            transition: top 0.05s linear, left 0.05s linear;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info">Használd a <strong>nyilakat</strong> vagy ha PRO vagy a  <strong>W, A, S, D</strong> billentyűket a mozgatáshoz!</div>
+    <div id="box"></div>
+
+   <script src="negyedik.js"></script>
+
+</body>
+</html>
