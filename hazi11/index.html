@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Házi 11</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;      
+            justify-content: flex-start; 
+            align-items: center;        
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
 
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            max-width: 1100px;
+        }
+
+        .link-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 130px;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #2b2d42;
+            text-decoration: none;
+            border-radius: 12px;
+            border: 2px solid #e0e4e8;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .link-box h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.2rem;
+            color: #1d3557;
+        }
+
+        .link-box p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .link-box:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            border-color: #457b9d;
+        }
+        .h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 40px;
+            color: #1d3557;
+        }
+    </style>
+</head>
+<body>
+    <h1>Házi 11</h1>
+    <div class="container">
+        <a href="hazi11_1.html" class="link-box">
+            <h3>1. Feladat</h3>
+            <p>Gondoltam egy számra</p>
+        </a>
+
+        <a href="hazi11_2.html" class="link-box">
+            <h3>2. Feladat</h3>
+            <p>Napkereső</p>
+        </a>
+
+        <a href="hazi11_3.html" class="link-box">
+            <h3>3. Rendszerező</h3>
+            <p>Referenciák</p>
+        </a>
+
+        <a href="hazi11_4.html" class="link-box">
+            <h3>4. Feladat</h3>
+            <p>Alert</p>
+        </a>
+
+        <a href="hazi11_5.html" class="link-box">
+            <h3>5. Feladat</h3>
+            <p>Témaváltó</p>
+        </a>
+    </div>
+
+</body>
+</html>
